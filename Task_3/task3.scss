@@ -1,0 +1,190 @@
+$small-screen: 480px; /*max width*/
+$medium-screen: 481px;
+$large-screen: 801px;/*min width*/
+
+body {
+    margin:0;
+    padding:0;
+    background-color: rgb(226, 239, 241);
+}
+.placeholder {
+    border: #8ccff7;
+    background: #8ccff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image2{
+    display: none;
+}
+
+.image3{
+    display: none;
+}
+
+/*Rectangle adjustment*/
+.rectangle1 {
+    margin-top: 50px;
+    background-color: #4e89ae;
+    height: 50px;
+    width: 100%;
+
+    &:hover{
+        background-color: #444;
+    }
+
+}
+
+
+.rectangle2 {
+    margin-top: 0;
+    background-color: #43658b;
+    @extend .rectangle1 
+ 
+}
+
+.rectangle3 {
+    margin-top: 0;
+    background-color: #ed6663;
+    @extend .rectangle1
+
+}
+
+.rectangle4 {
+    margin-top: 0;
+    background-color: #ffa372;
+    @extend .rectangle1
+
+}
+
+/*circle adjustment*/
+
+.circle-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content:center;
+}
+.circle1 {
+    background-color: #4e89ae;
+    height:70px;
+    width:70px;
+    margin-right: 10px;
+    border-radius: 50%;
+    
+    &:hover{
+        background-color: #444;
+    }
+}
+
+.circle2 {
+    background-color: #43658b;
+    height:80px;
+    width:80px;
+    @extend .circle1
+
+
+}
+
+.circle3 {
+    background-color: #ed6663;
+    height:90px;
+    width:90px;
+    @extend .circle1
+}
+
+.circle4 {
+    background-color: #ffa372;
+    height:100px;
+    width:100px;
+    @extend .circle1
+}
+
+.footer {
+    margin-top: 100px;
+    height: 50px;
+    width: 100%;
+    background-color: #8ccff7;
+}
+
+@media screen and (max-width: $small-screen) {
+.placeholder {
+    border: #8ccff7;
+    background: #8ccff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+.image1{
+    display: none;
+}
+
+.image2{
+    display: none;
+}
+
+
+.image3{
+    display: block;
+}
+
+
+.circle-container{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: $medium-screen) {
+    .placeholder {
+        border: #8ccff7;
+        background: #8ccff7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            
+        }    
+
+.image1{
+     display: none;
+}
+    
+.image2{
+    display: block;
+}
+    
+    
+.image3{
+    display: none;
+}
+}
+
+@media screen and (min-width: $large-screen) {
+    .placeholder {
+        border: #8ccff7;
+        background: #8ccff7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            
+        }   
+.image1{
+    display: block;
+}
+           
+.image2{
+    display: none;
+}
+           
+           
+.image3{
+     display: none;
+}
+
+    }
